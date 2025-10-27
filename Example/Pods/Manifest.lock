@@ -1,6 +1,6 @@
 PODS:
   - IQKeyboardManagerSwift (6.5.16)
-  - KhaltiCheckout (0.1.0)
+  - KhaltiCheckout (1.0.0)
   - Nimble (10.0.0)
   - Quick (2.2.1)
 
@@ -22,10 +22,10 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   IQKeyboardManagerSwift: 12d89768845bb77b55cc092ecc2b1f9370f06b76
-  KhaltiCheckout: 5a85481567580d724ff4d3b3551df84d19f0e178
+  KhaltiCheckout: ea6fffda29c9ca54fd2af9b831c8b397f79dc49c
   Nimble: 5316ef81a170ce87baf72dd961f22f89a602ff84
   Quick: f5754d69b7013f5864c29aab9ae6f0c79c5bc200
 
 PODFILE CHECKSUM: 43b60ca5b74a4195b9f31eb1ec93af9209e98151
 
-COCOAPODS: 1.15.2
+COCOAPODS: 1.16.2

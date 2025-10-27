@@ -177,36 +177,48 @@ class KhaltiPaymentViewController: UIViewController {
     }
     
     func addNavigationBar(){
+        let statusBarView = UIView()
+        statusBarView.translatesAutoresizingMaskIntoConstraints = false
+        statusBarView.backgroundColor = UIColor(hex: 0xE8F0F7)
+        view.addSubview(statusBarView)
+        
+        NSLayoutConstraint.activate([
+            statusBarView.topAnchor.constraint(equalTo: view.topAnchor),
+            statusBarView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            statusBarView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            statusBarView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor)
+        ])
+
         let navigationBar = UINavigationBar()
         navigationBar.translatesAutoresizingMaskIntoConstraints = false
-        
         view.addSubview(navigationBar)
+        
         navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.black]
-        // Add constraints for the navigationBar
-        navigationBar.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
-        navigationBar.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
-        navigationBar.heightAnchor.constraint(equalToConstant: 44.0).isActive = true
+        navigationBar.backgroundColor = UIColor(hex: 0xE8F0F7)
+        navigationBar.barTintColor = UIColor(hex: 0xE8F0F7)
+
+        NSLayoutConstraint.activate([
+            navigationBar.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
+            navigationBar.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            navigationBar.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            navigationBar.heightAnchor.constraint(equalToConstant: 44.0)
+        ])
+        
         let navigationItem = UINavigationItem(title: "Payment Gateway")
-        
-        navigationBar.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor).isActive = true
-        
         
         if #available(iOS 13.0, *) {
             let backButton = UIBarButtonItem(image: UIImage(systemName: "chevron.left"), style: .plain, target: self, action: #selector(backButtonTapped))
             backButton.tintColor = .black
-            
             navigationItem.leftBarButtonItem = backButton
-            
         } else {
-            // Create a back button
             let backButton = UIBarButtonItem(image: UIImage(named: "backArrow"), style: .plain, target: self, action: #selector(backButtonTapped))
             backButton.tintColor = .black
-            
             navigationItem.leftBarButtonItem = backButton
         }
-        navigationBar.barTintColor = .white
+
         navigationBar.items = [navigationItem]
     }
+
     
     private  func stopLoadingView(){
         self.loadingView.stopLoading()
@@ -220,6 +232,14 @@ class KhaltiPaymentViewController: UIViewController {
 }
 
 
+extension UIColor {
+    convenience init(hex: UInt32, alpha: CGFloat = 1.0) {
+        let red = CGFloat((hex & 0xFF0000) >> 16) / 255.0
+        let green = CGFloat((hex & 0x00FF00) >> 8) / 255.0
+        let blue = CGFloat(hex & 0x0000FF) / 255.0
+        self.init(red: red, green: green, blue: blue, alpha: alpha)
+    }
+}
 
 // MARK: - WebView Delegates function
 

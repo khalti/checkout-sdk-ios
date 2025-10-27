@@ -304,7 +304,7 @@
 					};
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
-						DevelopmentTeam = 65M3758GWU;
+						DevelopmentTeam = HW5PK5B369;
 						LastSwiftMigration = 0900;
 					};
 					607FACE41AFB9204008FA782 = {
@@ -757,7 +757,7 @@
 			baseConfigurationReference = 400B4E8EE0543A3BEFD8AE28 /* Pods-KhaltiCheckout_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 65M3758GWU;
+				DEVELOPMENT_TEAM = HW5PK5B369;
 				INFOPLIST_FILE = KhaltiCheckout/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -774,7 +774,7 @@
 			baseConfigurationReference = CB6907E5173BB9DE0BCA7318 /* Pods-KhaltiCheckout_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 65M3758GWU;
+				DEVELOPMENT_TEAM = HW5PK5B369;
 				INFOPLIST_FILE = KhaltiCheckout/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

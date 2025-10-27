@@ -61,9 +61,9 @@ class KhaltiPaymentControllerViewModel {
     
     private func handleError(error:ErrorModel,isPayment:Bool){
         let viewModelData = KhaltiPaymentViewDataModel(errorModel:error,isPayment:isPayment )
-        khalti?.onMessage(viewModelData.returnOnMessagePayload(),khalti)
-        
-        
+        DispatchQueue.main.async { [weak self] in
+            self?.khalti?.onMessage(viewModelData.returnOnMessagePayload(), self?.khalti)
+        }
     }
     
     private func getBaseUrl() ->Url{
