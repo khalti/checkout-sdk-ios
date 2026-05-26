@@ -22,6 +22,9 @@ DerivedData
 .build/
 .swiftpm/
 
+# Claude AI
+CLAUDE.md
+
 # Bundler
 .bundle
 
