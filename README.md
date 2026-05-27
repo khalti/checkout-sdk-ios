@@ -61,7 +61,7 @@ class ViewController: UIViewController {
         let config = KhaltiPayConfig(
             publicKey: "your_public_key_here",
             pIdx: "your_payment_idx_here",
-            extra: ["mode": "wallet"],
+            paymentUrl: "your_payment_url_here",
             environment: .TEST // Use .PROD for production
         )
         
@@ -122,7 +122,7 @@ struct ContentView: View {
         let config = KhaltiPayConfig(
             publicKey: "your_public_key_here",
             pIdx: "your_payment_idx_here",
-            extra: ["mode": "wallet"],
+            paymentUrl: "your_payment_url_here",
             environment: .TEST // Use .PROD for production
         )
         

@@ -21,6 +21,9 @@ let package = Package(
             name: "KhaltiCheckout",
             dependencies: [],
             path: "Sources",
+            exclude: [
+                "Core/Resources/CheckOut.storyboard"
+            ],
             sources: [
                 "Core",
                 "KhaltiCheckout/Khalti.swift",
@@ -30,7 +33,7 @@ let package = Package(
                 "KhaltiCheckout/ViewModel"
             ],
             resources: [
-                .process("KhaltiCheckout/Resources/CheckOut.storyboard")
+                .process("Core/Resources/CheckOut.storyboard")
             ]
         ),
         .testTarget(

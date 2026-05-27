@@ -2,8 +2,8 @@
 //  ViewController.swift
 //  KhaltiCheckout
 //
-//  Created by bikash giri on 05/13/2024.
-//  Copyright (c) 2024 bikash giri. All rights reserved.
+//  Created by Khalti on 05/27/2026.
+//  Copyright (c) 2026 Khalti by IME. All rights reserved.
 //
 
 import UIKit

@@ -22,6 +22,9 @@ DerivedData
 .build/
 .swiftpm/
 
+# Internal testing apps
+Example/
+
 # Bundler
 .bundle
 
