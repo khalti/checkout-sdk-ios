@@ -1,0 +1,6 @@
+framework module Pods_KhaltiCheckoutObjectiveC {
+  umbrella header "Pods-KhaltiCheckoutObjectiveC-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -15,13 +15,28 @@ let package = Package(
         ),
     ],
     dependencies: [
-        // Add any external dependencies here if needed
+       
     ],
     targets: [
         .target(
             name: "KhaltiCheckout",
             dependencies: [],
             path: "Sources/KhaltiCheckout",
+            sources: [
+                "Khalti.swift",
+                "Component",
+                "Model",
+                "Resources/ErrorType.swift",
+                "Resources/KhaltiGlobal.swift",
+                "Resources/OnMessageEvent.swift",
+                "Resources/OnMessagePayload.swift",
+                "Resources/Url.swift",
+                "Resources/Extensions",
+                "Service",
+                "View/KhaltiCheckoutView.swift",
+                "View/KhaltiPaymentViewController.swift",
+                "ViewModel"
+            ],
             resources: [
                 .process("Resources/CheckOut.storyboard")
             ]

@@ -34,12 +34,15 @@ public typealias OnReturn = (Khalti?) -> ()
         return self.config
     }
 
-    @objc public func open(viewController: UIViewController) {
+    public func makeViewController() -> UIViewController {
         let vc = KhaltiPaymentViewController()
         vc.khalti = self
         vc.modalPresentationStyle = .fullScreen
+        return vc
+    }
 
-        viewController.present(vc, animated: false)
+    @objc public func open(viewController: UIViewController) {
+        viewController.present(makeViewController(), animated: false)
     }
 
     @objc public func close() {

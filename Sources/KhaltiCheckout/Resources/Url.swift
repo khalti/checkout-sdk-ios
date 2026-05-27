@@ -18,8 +18,4 @@ enum Url:String {
     func appendUrl(url:Url) -> String{
         return self.rawValue + url.rawValue
     }
-    
-
-    
-    
 }

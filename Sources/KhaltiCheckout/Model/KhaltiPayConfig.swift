@@ -11,39 +11,49 @@ import Foundation
 @objc public class KhaltiPayConfig: NSObject {
     public var publicKey:String
     public var pIdx:String
-    @objc public var openInKhalti:Bool = false
+    public var paymentUrl: String
+    public var extraWithPidx: NSDictionary
+    public var extra: NSDictionary {
+        extraWithPidx
+    }
     public var environment:Environment = Environment.TEST
     
-   @objc public init(publicKey:String,pIdx:String,openInKhalti:Bool = false,environment:Environment) {
+    @objc public init(publicKey:String,pIdx:String,extra: NSDictionary = [:], paymentUrl: String, environment:Environment) {
+        let extraWithPidx = NSMutableDictionary(dictionary: extra)
+        extraWithPidx["pIdx"] = pIdx
+
         self.publicKey = publicKey
         self.pIdx = pIdx
-        self.openInKhalti = openInKhalti
+        self.extraWithPidx = extraWithPidx
+        self.paymentUrl = paymentUrl
         self.environment = environment
+        super.init()
     }
     
-     public func copyWith( publicKey: String? = nil,pIdx:String? = nil,openInKhalti:Bool? = false,environment:Environment? = nil) -> KhaltiPayConfig{
+     public func copyWith( publicKey: String? = nil,pIdx:String? = nil, extra: NSDictionary? = nil, environment:Environment? = nil) -> KhaltiPayConfig{
         return KhaltiPayConfig(
             publicKey: publicKey ?? self.publicKey,
             pIdx: pIdx ?? self.pIdx,
-            openInKhalti: openInKhalti ?? self.openInKhalti,
+            extra: getExtra(extra: extra),
+            paymentUrl: paymentUrl ?? self.paymentUrl,
             environment : environment ?? self.environment
         )
     }
-    
-    
-    
-    
     
     func getPidx() -> String {
         return self.pIdx
     }
     
+    func getExtra(extra: NSDictionary?) -> NSDictionary {
+        let extraWithPidx = NSMutableDictionary(dictionary: extra ?? [:])
+        extraWithPidx["pIdx"] = pIdx
+        return extraWithPidx
+    }
+    
     func getPublicKey() -> String {
         return self.publicKey
     }
-    func getOpenInKhalti() -> Bool{
-        return self.openInKhalti
-    }
+    
     func getEnvironment() -> Environment{
         return self.environment
     }
@@ -51,8 +61,4 @@ import Foundation
     func isProd() -> Bool{
         return self.environment == Environment.PROD
     }
-    
-    
-    
 }
-

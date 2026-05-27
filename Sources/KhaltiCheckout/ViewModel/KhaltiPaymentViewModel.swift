@@ -25,6 +25,7 @@ class KhaltiPaymentControllerViewModel {
         if let pIdx = khalti?.config.pIdx {
             var params = [String:String]()
             params["pidx"] = pIdx
+            params["payment_url"] = getPaymentUrl()
             service.fetchDetail(urlInString:url,params: params,publicKey: khalti?.config.publicKey ?? "", onCompletion: {(response) in
                 onCompletion(response)
                 
@@ -36,9 +37,6 @@ class KhaltiPaymentControllerViewModel {
                 }
             })
         }
-        
-        
-        
     }
     
     func verifyPaymentStatus(onCompletion:@escaping((PaymentLoadModel)->()),onError: @escaping ((String)->())){
@@ -70,5 +68,21 @@ class KhaltiPaymentControllerViewModel {
         let isProd = khalti?.config.isProd() ?? false
         let baseUrl = isProd ? Url.BASE_KHALTI_URL_PROD: Url.BASE_KHALTI_URL_STAGING
         return baseUrl
+    }
+    
+    private func getPaymentUrl() -> String {
+        let baseUrl = (khalti?.config.isProd() ?? false) ? Url.BASE_KHALTI_URL_PROD: Url.BASE_KHALTI_URL_STAGING
+
+        var components = URLComponents(string: baseUrl.rawValue)
+        components?.queryItems = khalti?.config.extra.map {
+            URLQueryItem(
+                name: $0.key as! String,
+                value: String(describing: $0.value)
+            )
+        }
+
+        let paymentUrl = components?.url?.absoluteString ?? ""
+        
+        return paymentUrl
     }
 }
