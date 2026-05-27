@@ -1,6 +1,0 @@
-framework module KhaltiCheckout {
-  umbrella header "KhaltiCheckout-umbrella.h"
-
-  export *
-  module * { export * }
-}

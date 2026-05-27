@@ -12,40 +12,32 @@ let package = Package(
         .library(
             name: "KhaltiCheckout",
             targets: ["KhaltiCheckout"]
-        ),
+        )
     ],
     dependencies: [
-       
     ],
     targets: [
         .target(
             name: "KhaltiCheckout",
             dependencies: [],
-            path: "Sources/KhaltiCheckout",
+            path: "Sources",
             sources: [
-                "Khalti.swift",
-                "Component",
-                "Model",
-                "Resources/ErrorType.swift",
-                "Resources/KhaltiGlobal.swift",
-                "Resources/OnMessageEvent.swift",
-                "Resources/OnMessagePayload.swift",
-                "Resources/Url.swift",
-                "Resources/Extensions",
-                "Service",
-                "View/KhaltiCheckoutView.swift",
-                "View/KhaltiPaymentViewController.swift",
-                "ViewModel"
+                "Core",
+                "KhaltiCheckout/Khalti.swift",
+                "KhaltiCheckout/Component",
+                "KhaltiCheckout/View/KhaltiCheckoutView.swift",
+                "KhaltiCheckout/View/KhaltiPaymentViewController.swift",
+                "KhaltiCheckout/ViewModel"
             ],
             resources: [
-                .process("Resources/CheckOut.storyboard")
+                .process("KhaltiCheckout/Resources/CheckOut.storyboard")
             ]
         ),
         .testTarget(
             name: "KhaltiCheckoutTests",
             dependencies: ["KhaltiCheckout"],
             path: "Tests/KhaltiCheckoutTests"
-        ),
+        )
     ],
     swiftLanguageVersions: [.v5]
 )
