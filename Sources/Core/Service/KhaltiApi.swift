@@ -17,7 +17,7 @@ class KhaltiAPIService {
     
     private func createHttpBody(body:[String:String]) ->Data?{
         guard let jsonData = try? JSONSerialization.data(withJSONObject: body, options: []) else {
-            print("Error converting parameters to JSON")
+            debugPrint("Error converting parameters to JSON")
             return nil
         }
         return jsonData
@@ -85,21 +85,21 @@ extension KhaltiAPIService:KhaltiApiServiceProtocol{
 
         let isConnected = monitor.isConnected
         if isConnected{
-            print("===========================================================")
-            print("Request Url:")
-            print (request.url ?? "url empty")
-            print(request.allHTTPHeaderFields ?? "empty header")
+            debugPrint("===========================================================")
+            debugPrint("Request Url:")
+            debugPrint (request.url ?? "url empty")
+            debugPrint(request.allHTTPHeaderFields ?? "empty header")
             
             print("===========================================================")
             if let bodyData = request.httpBody {
                 if let bodyString = String(data: bodyData, encoding: .utf8) {
                     
-                    print("===========================================================")
-                    print("Request httpBody:")
-                    print(bodyString)
-                    print("===========================================================")
+                    debugPrint("===========================================================")
+                    debugPrint("Request httpBody:")
+                    debugPrint(bodyString)
+                    debugPrint("===========================================================")
                 } else {
-                    print("Request does not contain a httpBody.")
+                    debugPrint("Request does not contain a httpBody.")
                 }
                 
                 let task = URLSession.shared.dataTask(with: request) { data, response, error in
@@ -128,9 +128,9 @@ extension KhaltiAPIService:KhaltiApiServiceProtocol{
                                 let decodedObject:T = try decoder.decode(T.self, from: data)
                                 onSuccess(decodedObject)
                             } catch let decodingError {
-                                print("===========================================================")
-                                print(decodingError)
-                                print("===========================================================")
+                                debugPrint("===========================================================")
+                                debugPrint(decodingError)
+                                debugPrint("===========================================================")
                                 onError(ErrorModel(statusCode: statusCode, errorType:FailureType.ParseError))
                             }
                             //                        return
@@ -145,25 +145,25 @@ extension KhaltiAPIService:KhaltiApiServiceProtocol{
                                 onError(ErrorModel(statusCode:statusCode,errorType:FailureType.Httpcall,errorMessage:dict["detail"] as? String ?? "Not Found"))
                             }
                             if let error = error {
-                                print("Client error with status code: \(statusCode)")
+                                debugPrint("Client error with status code: \(statusCode)")
                                 onError(ErrorModel(statusCode:statusCode,errorType:FailureType.Httpcall,errorMessage:error.localizedDescription))
                                 return
                             }
                             
                             
                         case 500...599:
-                            print("Server error with status code: \(statusCode)")
+                        debugPrint("Server error with status code: \(statusCode)")
                             onError(ErrorModel(statusCode: statusCode, errorType:FailureType.ServerUnreachable))
                             return
                         default:
-                            print("Unexpected status code: \(statusCode)")
+                        debugPrint("Unexpected status code: \(statusCode)")
                             onError(ErrorModel(statusCode: statusCode, errorType:FailureType.Generic))
                             return
                     }
                     
-                    print("===========================================================")
-                    print("Received JSON data:", String(data: data, encoding: .utf8) ?? "Invalid UTF-8 data")
-                    print("===========================================================")
+                    debugPrint("===========================================================")
+                    debugPrint("Received JSON data:", String(data: data, encoding: .utf8) ?? "Invalid UTF-8 data")
+                    debugPrint("===========================================================")
                     
                     //                onError(ErrorModel(statusCode: statusCode, errorType:FailureType.Generic,errorMessage: errorMessage))
                     

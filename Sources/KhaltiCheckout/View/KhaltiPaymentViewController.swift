@@ -36,6 +36,7 @@ class KhaltiPaymentViewController: UIViewController {
         monitor.startMonitoring()
     
         viewModel = KhaltiPaymentControllerViewModel(khalti:khalti)
+        returnUrl = getReturnUrl(fullUrl: viewModel?.khalti?.config.paymentUrl ?? "")
         self.view.backgroundColor = .white
         addNavigationBar()
         createPaymentWebView()
@@ -240,16 +241,13 @@ extension KhaltiPaymentViewController :WKNavigationDelegate, WKUIDelegate{
     func webView(_ webView: WKWebView, decidePolicyFor navigationResponse: WKNavigationResponse, decisionHandler: @escaping (WKNavigationResponsePolicy) -> Void) {
         self.stopLoadingView()
         if let httpResponse = navigationResponse.response as? HTTPURLResponse {
-            
             if let returnUrl ,(httpResponse.url?.description ?? "") .contains(returnUrl) {
                 self.khalti?.onReturn?(khalti)
                 self.verifyPaymentStatus()
-                
             }
         }
         decisionHandler(.allow)
     }
-    
 }
 
 
@@ -281,5 +279,17 @@ extension KhaltiPaymentViewController:KhaltiPaymentViewControllerProtocol{
         }
         )
         
+    }
+}
+
+extension KhaltiPaymentViewController {
+    func getReturnUrl(fullUrl: String) -> String {
+        if let components = URLComponents(string: fullUrl),
+           let returnUrl = components.queryItems?
+                .first(where: { $0.name == "return_url" })?
+                .value {
+            return returnUrl
+        }
+        return ""
     }
 }

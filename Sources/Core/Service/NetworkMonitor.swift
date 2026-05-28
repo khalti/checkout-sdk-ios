@@ -18,8 +18,6 @@ class NetworkMonitor {
     
     private init() {
         monitor.pathUpdateHandler = { path in
-            print("path called or not")
-            print(path)
             self.isConnected = path.status == .satisfied
             self.connectionType = path.availableInterfaces.filter {
                 path.usesInterfaceType($0.type)

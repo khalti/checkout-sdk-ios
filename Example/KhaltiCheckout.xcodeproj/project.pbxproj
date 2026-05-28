@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,6 +17,8 @@
 		0476A82F2C47DD840019514A /* targets.png in Resources */ = {isa = PBXBuildFile; fileRef = 0476A82D2C47DD840019514A /* targets.png */; };
 		0476A8312C47DDD20019514A /* select_targets.png in Resources */ = {isa = PBXBuildFile; fileRef = 0476A8302C47DDD20019514A /* select_targets.png */; };
 		0476A8322C47DDD20019514A /* select_targets.png in Resources */ = {isa = PBXBuildFile; fileRef = 0476A8302C47DDD20019514A /* select_targets.png */; };
+		5430F8182FC7F098003B661A /* KhaltiCheckout in Frameworks */ = {isa = PBXBuildFile; productRef = 5430F8172FC7F098003B661A /* KhaltiCheckout */; };
+		54C0C6642FC6E740005E091B /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 54C0C6632FC6E740005E091B /* IQKeyboardManagerSwift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* KhaltiCheckOut.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* KhaltiCheckOut.storyboard */; };
@@ -24,9 +26,6 @@
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		8929BD64E144D3A07484F032 /* (null) in Frameworks */ = {isa = PBXBuildFile; };
-		A5B9AFD151C73C2B9FEAB6AA /* Pods_KhaltiCheckout_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D487E4C997B1800A960D758A /* Pods_KhaltiCheckout_Example.framework */; };
-		AD8F86FB40448D58A4A52B2B /* Pods_KhaltiCheckoutObjectiveC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 918C1FE17B565C63EA5A2EEA /* Pods_KhaltiCheckoutObjectiveC.framework */; };
-		D0582F2AA3E4C46FD553B7AF /* Pods_KhaltiCheckout_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B5AFAD9D82851F6C4033524 /* Pods_KhaltiCheckout_Tests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,10 +51,6 @@
 		044B4EFA2C36A25D00252BB4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0476A82D2C47DD840019514A /* targets.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = targets.png; sourceTree = "<group>"; };
 		0476A8302C47DDD20019514A /* select_targets.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = select_targets.png; sourceTree = "<group>"; };
-		2ABDBF7FEE6D29C4F339EA2E /* Pods-KhaltiCheckoutObjectiveC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KhaltiCheckoutObjectiveC.release.xcconfig"; path = "Target Support Files/Pods-KhaltiCheckoutObjectiveC/Pods-KhaltiCheckoutObjectiveC.release.xcconfig"; sourceTree = "<group>"; };
-		400B4E8EE0543A3BEFD8AE28 /* Pods-KhaltiCheckout_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KhaltiCheckout_Example.debug.xcconfig"; path = "Target Support Files/Pods-KhaltiCheckout_Example/Pods-KhaltiCheckout_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		5B5AFAD9D82851F6C4033524 /* Pods_KhaltiCheckout_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KhaltiCheckout_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		605A4ECFEB210D025C79B6A5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* KhaltiCheckout_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KhaltiCheckout_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -67,13 +62,6 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		66FE0B7D73281D3E7EEFC19B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		918C1FE17B565C63EA5A2EEA /* Pods_KhaltiCheckoutObjectiveC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KhaltiCheckoutObjectiveC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AC070A0EEDBCA68BFB7E3EC7 /* KhaltiCheckout.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = KhaltiCheckout.podspec; path = ../KhaltiCheckout.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		B31DB5A23CC28AF82E983D14 /* Pods-KhaltiCheckoutObjectiveC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KhaltiCheckoutObjectiveC.debug.xcconfig"; path = "Target Support Files/Pods-KhaltiCheckoutObjectiveC/Pods-KhaltiCheckoutObjectiveC.debug.xcconfig"; sourceTree = "<group>"; };
-		C96B7010BBF20D65CEDD051E /* Pods-KhaltiCheckout_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KhaltiCheckout_Tests.release.xcconfig"; path = "Target Support Files/Pods-KhaltiCheckout_Tests/Pods-KhaltiCheckout_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		CB6907E5173BB9DE0BCA7318 /* Pods-KhaltiCheckout_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KhaltiCheckout_Example.release.xcconfig"; path = "Target Support Files/Pods-KhaltiCheckout_Example/Pods-KhaltiCheckout_Example.release.xcconfig"; sourceTree = "<group>"; };
-		D487E4C997B1800A960D758A /* Pods_KhaltiCheckout_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KhaltiCheckout_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		ED05729C063F8E66F264037F /* Pods-KhaltiCheckout_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KhaltiCheckout_Tests.debug.xcconfig"; path = "Target Support Files/Pods-KhaltiCheckout_Tests/Pods-KhaltiCheckout_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,7 +70,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				8929BD64E144D3A07484F032 /* (null) in Frameworks */,
-				AD8F86FB40448D58A4A52B2B /* Pods_KhaltiCheckoutObjectiveC.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,7 +77,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A5B9AFD151C73C2B9FEAB6AA /* Pods_KhaltiCheckout_Example.framework in Frameworks */,
+				54C0C6642FC6E740005E091B /* IQKeyboardManagerSwift in Frameworks */,
+				5430F8182FC7F098003B661A /* KhaltiCheckout in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,7 +86,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D0582F2AA3E4C46FD553B7AF /* Pods_KhaltiCheckout_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,13 +121,11 @@
 			isa = PBXGroup;
 			children = (
 				0476A82C2C47DCA70019514A /* ScreenShots */,
-				607FACF51AFB993E008FA782 /* Podspec Metadata */,
-				607FACD21AFB9204008FA782 /* Example for KhaltiCheckout */,
+				607FACD21AFB9204008FA782 /* KhaltiCheckout */,
 				607FACE81AFB9204008FA782 /* Tests */,
 				044B4EE72C36A25B00252BB4 /* KhaltiCheckoutObjectiveC */,
 				607FACD11AFB9204008FA782 /* Products */,
-				D1E6D036A853FB89A1D0A51D /* Pods */,
-				7FF028415BCE042443054EE0 /* Frameworks */,
+				66FE0B7D73281D3E7EEFC19B /* README.md */,
 			);
 			sourceTree = "<group>";
 		};
@@ -154,7 +139,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		607FACD21AFB9204008FA782 /* Example for KhaltiCheckout */ = {
+		607FACD21AFB9204008FA782 /* KhaltiCheckout */ = {
 			isa = PBXGroup;
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
@@ -164,7 +149,6 @@
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
 			);
-			name = "Example for KhaltiCheckout";
 			path = KhaltiCheckout;
 			sourceTree = "<group>";
 		};
@@ -193,39 +177,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		607FACF51AFB993E008FA782 /* Podspec Metadata */ = {
-			isa = PBXGroup;
-			children = (
-				AC070A0EEDBCA68BFB7E3EC7 /* KhaltiCheckout.podspec */,
-				66FE0B7D73281D3E7EEFC19B /* README.md */,
-				605A4ECFEB210D025C79B6A5 /* LICENSE */,
-			);
-			name = "Podspec Metadata";
-			sourceTree = "<group>";
-		};
-		7FF028415BCE042443054EE0 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				D487E4C997B1800A960D758A /* Pods_KhaltiCheckout_Example.framework */,
-				5B5AFAD9D82851F6C4033524 /* Pods_KhaltiCheckout_Tests.framework */,
-				918C1FE17B565C63EA5A2EEA /* Pods_KhaltiCheckoutObjectiveC.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		D1E6D036A853FB89A1D0A51D /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				400B4E8EE0543A3BEFD8AE28 /* Pods-KhaltiCheckout_Example.debug.xcconfig */,
-				CB6907E5173BB9DE0BCA7318 /* Pods-KhaltiCheckout_Example.release.xcconfig */,
-				ED05729C063F8E66F264037F /* Pods-KhaltiCheckout_Tests.debug.xcconfig */,
-				C96B7010BBF20D65CEDD051E /* Pods-KhaltiCheckout_Tests.release.xcconfig */,
-				B31DB5A23CC28AF82E983D14 /* Pods-KhaltiCheckoutObjectiveC.debug.xcconfig */,
-				2ABDBF7FEE6D29C4F339EA2E /* Pods-KhaltiCheckoutObjectiveC.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -233,11 +184,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 044B4EFE2C36A25D00252BB4 /* Build configuration list for PBXNativeTarget "KhaltiCheckoutObjectiveC" */;
 			buildPhases = (
-				DE8F485E1B22C38E58DFDB0A /* [CP] Check Pods Manifest.lock */,
 				044B4EE22C36A25B00252BB4 /* Sources */,
 				044B4EE32C36A25B00252BB4 /* Frameworks */,
 				044B4EE42C36A25B00252BB4 /* Resources */,
-				8D0B8382C7D5E5A0EE8EDD3A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -252,11 +201,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "KhaltiCheckout_Example" */;
 			buildPhases = (
-				BE6303BB906374C3EBD6F661 /* [CP] Check Pods Manifest.lock */,
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
-				A6E5E7A60A7BDEDF2C1BFC19 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -271,11 +218,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "KhaltiCheckout_Tests" */;
 			buildPhases = (
-				7EB77C4FADCC9ACEE449D769 /* [CP] Check Pods Manifest.lock */,
 				607FACE11AFB9204008FA782 /* Sources */,
 				607FACE21AFB9204008FA782 /* Frameworks */,
 				607FACE31AFB9204008FA782 /* Resources */,
-				8B23EF9264ED295FE4715D8E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -325,6 +270,10 @@
 				Base,
 			);
 			mainGroup = 607FACC71AFB9204008FA782;
+			packageReferences = (
+				54C0C6622FC6E740005E091B /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+				5430F8162FC7F098003B661A /* XCLocalSwiftPackageReference "../../checkout-sdk-ios" */,
+			);
 			productRefGroup = 607FACD11AFB9204008FA782 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -369,133 +318,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		7EB77C4FADCC9ACEE449D769 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-KhaltiCheckout_Tests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		8B23EF9264ED295FE4715D8E /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-KhaltiCheckout_Tests/Pods-KhaltiCheckout_Tests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
-				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KhaltiCheckout_Tests/Pods-KhaltiCheckout_Tests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		8D0B8382C7D5E5A0EE8EDD3A /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-KhaltiCheckoutObjectiveC/Pods-KhaltiCheckoutObjectiveC-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/KhaltiCheckout/KhaltiCheckout.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KhaltiCheckout.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KhaltiCheckoutObjectiveC/Pods-KhaltiCheckoutObjectiveC-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A6E5E7A60A7BDEDF2C1BFC19 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-KhaltiCheckout_Example/Pods-KhaltiCheckout_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/KhaltiCheckout/KhaltiCheckout.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KhaltiCheckout.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KhaltiCheckout_Example/Pods-KhaltiCheckout_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		BE6303BB906374C3EBD6F661 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-KhaltiCheckout_Example-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		DE8F485E1B22C38E58DFDB0A /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-KhaltiCheckoutObjectiveC-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		044B4EE22C36A25B00252BB4 /* Sources */ = {
@@ -573,7 +395,6 @@
 /* Begin XCBuildConfiguration section */
 		044B4EFC2C36A25D00252BB4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B31DB5A23CC28AF82E983D14 /* Pods-KhaltiCheckoutObjectiveC.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -601,7 +422,10 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MARKETING_VERSION = 1.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
@@ -615,7 +439,6 @@
 		};
 		044B4EFD2C36A25D00252BB4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2ABDBF7FEE6D29C4F339EA2E /* Pods-KhaltiCheckoutObjectiveC.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -642,7 +465,10 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MARKETING_VERSION = 1.0;
 				MTL_FAST_MATH = YES;
@@ -747,20 +573,23 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 		607FACF01AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 400B4E8EE0543A3BEFD8AE28 /* Pods-KhaltiCheckout_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = HW5PK5B369;
 				INFOPLIST_FILE = KhaltiCheckout/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -771,13 +600,15 @@
 		};
 		607FACF11AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CB6907E5173BB9DE0BCA7318 /* Pods-KhaltiCheckout_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = HW5PK5B369;
 				INFOPLIST_FILE = KhaltiCheckout/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -788,7 +619,6 @@
 		};
 		607FACF31AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = ED05729C063F8E66F264037F /* Pods-KhaltiCheckout_Tests.debug.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = HW5PK5B369;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -801,7 +631,11 @@
 				);
 				INFOPLIST_FILE = Tests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
@@ -812,7 +646,6 @@
 		};
 		607FACF41AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C96B7010BBF20D65CEDD051E /* Pods-KhaltiCheckout_Tests.release.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = HW5PK5B369;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -821,7 +654,11 @@
 				);
 				INFOPLIST_FILE = Tests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
@@ -870,6 +707,36 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		5430F8162FC7F098003B661A /* XCLocalSwiftPackageReference "../../checkout-sdk-ios" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = "../../checkout-sdk-ios";
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		54C0C6622FC6E740005E091B /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5430F8172FC7F098003B661A /* KhaltiCheckout */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = KhaltiCheckout;
+		};
+		54C0C6632FC6E740005E091B /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 54C0C6622FC6E740005E091B /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 607FACC81AFB9204008FA782 /* Project object */;
 }
