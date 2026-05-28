@@ -17,13 +17,13 @@
 		0476A82F2C47DD840019514A /* targets.png in Resources */ = {isa = PBXBuildFile; fileRef = 0476A82D2C47DD840019514A /* targets.png */; };
 		0476A8312C47DDD20019514A /* select_targets.png in Resources */ = {isa = PBXBuildFile; fileRef = 0476A8302C47DDD20019514A /* select_targets.png */; };
 		0476A8322C47DDD20019514A /* select_targets.png in Resources */ = {isa = PBXBuildFile; fileRef = 0476A8302C47DDD20019514A /* select_targets.png */; };
-		5430F8182FC7F098003B661A /* KhaltiCheckout in Frameworks */ = {isa = PBXBuildFile; productRef = 5430F8172FC7F098003B661A /* KhaltiCheckout */; };
+		5430F8242FC80CE0003B661A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5430F8212FC80CE0003B661A /* LaunchScreen.xib */; };
+		5430F8262FC80CE0003B661A /* KhaltiCheckOut.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5430F81F2FC80CE0003B661A /* KhaltiCheckOut.storyboard */; };
+		5430F8272FC80CE0003B661A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5430F81C2FC80CE0003B661A /* Images.xcassets */; };
+		5430F8282FC80CE0003B661A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5430F8222FC80CE0003B661A /* ViewController.swift */; };
+		5430F8292FC80CE0003B661A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5430F81B2FC80CE0003B661A /* AppDelegate.swift */; };
+		547A5B102FC80F1400A777DC /* KhaltiCheckout in Frameworks */ = {isa = PBXBuildFile; productRef = 547A5B0F2FC80F1400A777DC /* KhaltiCheckout */; };
 		54C0C6642FC6E740005E091B /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 54C0C6632FC6E740005E091B /* IQKeyboardManagerSwift */; };
-		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
-		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
-		607FACDB1AFB9204008FA782 /* KhaltiCheckOut.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* KhaltiCheckOut.storyboard */; };
-		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
-		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		8929BD64E144D3A07484F032 /* (null) in Frameworks */ = {isa = PBXBuildFile; };
 /* End PBXBuildFile section */
@@ -51,13 +51,12 @@
 		044B4EFA2C36A25D00252BB4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0476A82D2C47DD840019514A /* targets.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = targets.png; sourceTree = "<group>"; };
 		0476A8302C47DDD20019514A /* select_targets.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = select_targets.png; sourceTree = "<group>"; };
+		5430F81B2FC80CE0003B661A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5430F81C2FC80CE0003B661A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		5430F81E2FC80CE0003B661A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/KhaltiCheckOut.storyboard; sourceTree = "<group>"; };
+		5430F8202FC80CE0003B661A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		5430F8222FC80CE0003B661A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* KhaltiCheckout_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KhaltiCheckout_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		607FACD71AFB9204008FA782 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/KhaltiCheckOut.storyboard; sourceTree = "<group>"; };
-		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* KhaltiCheckout_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KhaltiCheckout_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
@@ -78,7 +77,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				54C0C6642FC6E740005E091B /* IQKeyboardManagerSwift in Frameworks */,
-				5430F8182FC7F098003B661A /* KhaltiCheckout in Frameworks */,
+				547A5B102FC80F1400A777DC /* KhaltiCheckout in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -117,15 +116,35 @@
 			path = ScreenShots;
 			sourceTree = "<group>";
 		};
+		5430F8232FC80CE0003B661A /* KhaltiCheckout */ = {
+			isa = PBXGroup;
+			children = (
+				5430F81B2FC80CE0003B661A /* AppDelegate.swift */,
+				5430F81C2FC80CE0003B661A /* Images.xcassets */,
+				5430F81F2FC80CE0003B661A /* KhaltiCheckOut.storyboard */,
+				5430F8212FC80CE0003B661A /* LaunchScreen.xib */,
+				5430F8222FC80CE0003B661A /* ViewController.swift */,
+			);
+			path = KhaltiCheckout;
+			sourceTree = "<group>";
+		};
+		547A5B0E2FC80F1400A777DC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
+				5430F8232FC80CE0003B661A /* KhaltiCheckout */,
 				0476A82C2C47DCA70019514A /* ScreenShots */,
-				607FACD21AFB9204008FA782 /* KhaltiCheckout */,
 				607FACE81AFB9204008FA782 /* Tests */,
 				044B4EE72C36A25B00252BB4 /* KhaltiCheckoutObjectiveC */,
 				607FACD11AFB9204008FA782 /* Products */,
 				66FE0B7D73281D3E7EEFC19B /* README.md */,
+				547A5B0E2FC80F1400A777DC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -137,27 +156,6 @@
 				044B4EE62C36A25B00252BB4 /* KhaltiCheckoutObjectiveC.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		607FACD21AFB9204008FA782 /* KhaltiCheckout */ = {
-			isa = PBXGroup;
-			children = (
-				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
-				607FACD71AFB9204008FA782 /* ViewController.swift */,
-				607FACD91AFB9204008FA782 /* KhaltiCheckOut.storyboard */,
-				607FACDC1AFB9204008FA782 /* Images.xcassets */,
-				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
-				607FACD31AFB9204008FA782 /* Supporting Files */,
-			);
-			path = KhaltiCheckout;
-			sourceTree = "<group>";
-		};
-		607FACD31AFB9204008FA782 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				607FACD41AFB9204008FA782 /* Info.plist */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		607FACE81AFB9204008FA782 /* Tests */ = {
@@ -250,7 +248,7 @@
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
 						DevelopmentTeam = HW5PK5B369;
-						LastSwiftMigration = 0900;
+						LastSwiftMigration = 2640;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
@@ -302,11 +300,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACDB1AFB9204008FA782 /* KhaltiCheckOut.storyboard in Resources */,
-				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				0476A8312C47DDD20019514A /* select_targets.png in Resources */,
-				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 				0476A82E2C47DD840019514A /* targets.png in Resources */,
+				5430F8242FC80CE0003B661A /* LaunchScreen.xib in Resources */,
+				5430F8262FC80CE0003B661A /* KhaltiCheckOut.storyboard in Resources */,
+				5430F8272FC80CE0003B661A /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,8 +332,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
-				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				5430F8282FC80CE0003B661A /* ViewController.swift in Sources */,
+				5430F8292FC80CE0003B661A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,18 +372,18 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
-		607FACD91AFB9204008FA782 /* KhaltiCheckOut.storyboard */ = {
+		5430F81F2FC80CE0003B661A /* KhaltiCheckOut.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				607FACDA1AFB9204008FA782 /* Base */,
+				5430F81E2FC80CE0003B661A /* Base */,
 			);
 			name = KhaltiCheckOut.storyboard;
 			sourceTree = "<group>";
 		};
-		607FACDE1AFB9204008FA782 /* LaunchScreen.xib */ = {
+		5430F8212FC80CE0003B661A /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				607FACDF1AFB9204008FA782 /* Base */,
+				5430F8202FC80CE0003B661A /* Base */,
 			);
 			name = LaunchScreen.xib;
 			sourceTree = "<group>";
@@ -583,6 +581,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = HW5PK5B369;
 				INFOPLIST_FILE = KhaltiCheckout/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -593,6 +592,7 @@
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 			};
@@ -602,6 +602,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = HW5PK5B369;
 				INFOPLIST_FILE = KhaltiCheckout/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -727,8 +728,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		5430F8172FC7F098003B661A /* KhaltiCheckout */ = {
+		547A5B0F2FC80F1400A777DC /* KhaltiCheckout */ = {
 			isa = XCSwiftPackageProductDependency;
+			package = 5430F8162FC7F098003B661A /* XCLocalSwiftPackageReference "../../checkout-sdk-ios" */;
 			productName = KhaltiCheckout;
 		};
 		54C0C6632FC6E740005E091B /* IQKeyboardManagerSwift */ = {
